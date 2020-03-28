@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffb587ff">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edit"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:minLines="1"
+        android:maxLines="1"
+        android:maxLength="3"
+        android:maxWidth="20dp"
+        android:layout_alignLeft="@+id/lfr"
+        android:layout_alignStart="@+id/lfr"
+        android:layout_alignRight="@+id/lfr"
+        android:layout_alignEnd="@+id/lfr"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set PWM"
+        android:id="@+id/pwm"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:layout_alignLeft="@+id/rfr"
+        android:layout_alignStart="@+id/rfr"
+        android:layout_alignRight="@+id/rfr"
+        android:layout_alignEnd="@+id/rfr" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Left Front "
+        android:id="@+id/lfr"
+        android:minLines="3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_above="@+id/rba"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right Front"
+        android:id="@+id/rfr"
+        android:minLines="3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Back"
+        android:id="@+id/lba"
+        android:layout_below="@+id/lfr"
+        android:layout_alignLeft="@+id/lfr"
+        android:layout_alignStart="@+id/lfr"
+        android:layout_marginTop="39dp"
+        android:layout_alignRight="@+id/lfr"
+        android:layout_alignEnd="@+id/lfr"
+        android:minLines="3"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right Back"
+        android:id="@+id/rba"
+        android:minLines="3"
+        android:layout_below="@+id/rfr"
+        android:layout_marginTop="39dp"
+        android:layout_alignLeft="@+id/rfr"
+        android:layout_alignStart="@+id/rfr"
+        android:layout_alignRight="@+id/rfr"
+        android:layout_alignEnd="@+id/rfr"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="255"
+        android:id="@+id/seekBar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@+id/lfr"
+        android:layout_alignStart="@+id/lfr"
+        android:layout_alignRight="@+id/rfr"
+        android:layout_alignEnd="@+id/rfr" />
+
+</RelativeLayout>
